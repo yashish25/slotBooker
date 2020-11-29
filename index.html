@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "style.css" >
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+  .container {
+    align-self: center;
+    /* padding: 10px; */
+    position: relative;
+    align: center;
+  } 
+  </style>
+</head>
+<body>
+  <div class="container form-wrapper w-50" >
+    <div class="form-section">
+      <div class="section-title">Book a FREE trail coding session </div>
+      <div class="form-rows">
+        <input class="form-input w-100" id="parents-name" type="text"/>
+        <label class="form-label" for="parents-name">Parent's Name</label>
+      </div>
+      <div class="form-rows"> 
+        <input class="form-input" id="parents-contact-number" type="tel"/> 
+        <label class="form-label" for="parents-contact-number">Parent's Contact Number</label>
+      </div>
+      <div class="form-rows">
+        <input class="form-input" id="parents-email-id" type= "email"/>
+        <label class="form-label" for="parents-email-id">Parent's Email ID</label>
+      </div>
+      <div class="form-rows">
+        <input class="form-input" id="childs-age" type="number"/>
+        <label class="form-label" for="childs-age">Child's Age</label>
+      </div>
+      <div class="form-rows"></div>
+    </div>
+    <div class="form-section">
+      <div class="section-title">WHO CAN SEE YOUR NAME</div>
+      <div class="description">
+         Anyone can see this info when they communicate with you or view content you create in Google services.</div>
+    </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Submit
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Thanks for registering for the FREE trial.
+
+          Please select a slot as per your convenience.</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal1">Book Slot</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">BOOK  A FREE TRIAL CLASS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Choose a course</label>
+            <select class="form-control course_selector" id="exampleFormControlSelect1">
+              
+             
+  
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Select Language</label>
+            <select class="form-control" id="exampleFormControlSelect2">
+              <option>English</option>
+              <option>Hindi</option>
+              <option>Kannada</option>
+              <option>Marathi</option>
+              <option>Malyalam</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect3">Choose a date</label>
+            <select class="form-control date_selector" id="exampleFormControlSelect3">
+              
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect4">Choose a slot</label>
+            <select class="form-control" id="exampleFormControlSelect4">
+              
+            </select>
+            <em>All time slots are in IST (UTC +5:30)</em>
+          </div>
+
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" data-dismiss="modal">Book Now!</button>
+      </div>
+       
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel7">Thank you for booking free slot!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script>
+var coursename = [];
+var responsefinal = [];
+var courseslots = []
+function get_slots() {
+  $.ajax({
+    type: 'GET',
+    url: 'https://script.googleusercontent.com/macros/echo?user_content_key=18CGf_BFPl4cJ9iPPM5Dp_eqoorpEQGEk24iZXfPPOdH2Jb4VxSUSgjFSKxOHLaVL-M4wBS1TQqXw4kO47DZAev5o27rJ8Fbm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnC09Nb0QZ6ca_LU0vmo6mSiQ7SyFG3CgdL9-1Vgcha-TAYaAGhh-9xNG-9rMNEZHQRElvdDletx0&lib=MlJcTt87ug5f_XmzO-tnIbN3yFe7Nfhi6',
+    success: function(response){
+
+      // console.log(response);
+
+      responsefinal = response;
+      for (let index = 0; index < response.length; index++) {
+        const element = response[index];
+        coursename.push(element.course_name);
+      }
+      let opts='';
+      let select='<option>-Select Course-</option>';
+      for(i=0; i<coursename.length; i++){
+        
+        opts= opts + '<option>' + coursename[i] + '</option>';
+
+      }   
+      // console.log(opts.toString());
+      let textdata = select.concat(opts);
+      // $('#coursename').append(opts);
+      document.getElementById("exampleFormControlSelect1").innerHTML = textdata.toString();
+      
+      // console.log(coursename);
+
+      $(".course_selector").change(function(){
+        current_active_course = $(".course_selector")[0].value.toString();
+        // console.log(current_active_course);
+        // console.log(response);
+        let temp = {};
+        for(let i =0; i < response.length; i++){
+          if (current_active_course == response[i].course_name){
+            temp = response[i];
+
+          }
+        }
+        let temp2 = temp.slots;
+        // console.log("==== temp2", temp2)
+        let dates = [];
+        let slots_corresponding_to_dates = {}
+
+
+        for(let j=0; j < temp2.length; j++){
+          let timings = [];
+
+          date_time = temp2[j].slot;
+          var d = new Date(parseInt(date_time)).toLocaleDateString("en-US")
+          var t = new Date(parseInt(date_time)).toLocaleTimeString("en-US")
+
+          var temp1 = d
+          if (!(d in slots_corresponding_to_dates)){
+            timings.push(t)
+            slots_corresponding_to_dates[d] = timings;
+          }else{
+            let temp2 = slots_corresponding_to_dates[d];
+            temp2.push(t)
+          }
+        }
+        
+            
+            // slots_corresponding_to_dates[d]= timings.push(t)
+
+            // console.log(s)
+            // date_time = 
+            // dates.push(d);
+            // times.push(t)
+        
+        // console.log((Object.keys(slots_corresponding_to_dates)));
+        
+        
+        let opts1='';
+        let select1='<option>Choose a date</option>';
+        var keys = [];
+        for(var k in slots_corresponding_to_dates) keys.push(k);
+        // console.log(keys)
+
+        for(i=0; i<keys.length; i++){
+          // console.log((Object.keys(slots_corresponding_to_dates))[i])
+          
+          
+          opts1= opts1 + '<option>' + keys[i] + '</option>';
+
+        }
+        // console.log(opts1) 
+        // console.log('PPPPPPPPPPPPPPPPPPPPPPPP' , opts1.toString());
+        let textdata1 = select1.concat(opts1);
+        // $('#coursename').append(opts);
+        document.getElementById("exampleFormControlSelect3").innerHTML = textdata1.toString();
+        //console.log('======= fst',slots_corresponding_to_dates )
+        
+        
+        // console.log(slots_corresponding_to_dates)
+        $(".date_selector").change(function(){
+          current_active_date = $(".date_selector")[0].value.toString();
+          
+          
+          // console.log(slots)
+          // console.log(slots_corresponding_to_dates[current_active_date][1]);
+          let opts2='';
+          let select2='<option>Choose a slot</option>';
+          for(k=0; k<(slots_corresponding_to_dates[current_active_date].length); k++){
+            // console.log('_______________________', slots_corresponding_to_dates.length)
+            // console.log(slots_corresponding_to_dates['8/28/2020']);
+            slots = (slots_corresponding_to_dates[current_active_date][k]).toString();
+            console.log(slots);
+     
+            opts2= opts2 + '<option>' + slots + '</option>';
+
+          }   
+          // console.log(opts2.toString());
+          let textdata2 = select2.concat(opts2);
+          // $('#coursename').append(opts);
+          document.getElementById("exampleFormControlSelect4").innerHTML = textdata2.toString();
+          // console.log('======= fst',slots_corresponding_to_dates )
+
+
+        });
+
+      });
+    }
+  });
+}
+
+  
+get_slots();
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</html>

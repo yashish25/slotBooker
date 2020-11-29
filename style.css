@@ -1,0 +1,144 @@
+.form-wrapper {
+    margin: 30px;
+    border: 1px solid #dadce0;
+    padding: 24px;
+    border-radius: 8px;
+    font-family: Roboto,Arial,sans-serif;
+    color: #5f6368;
+    width: 100%;
+  }
+  .form-wrapper.w-50 {
+    width: 50%;
+  }
+  
+  .form-section + .form-section {
+    margin-top: 24px;
+  }
+  
+  .form-label {
+    position: absolute;
+    left: 10px;
+    top: 0%;
+    transform: translateY(-50%); 
+    z-index: 2;
+    transition: all .3s;
+    background: white;
+    padding: 0 5px;
+  }
+  
+  .form-input {
+    border: 1px solid #dadce0;
+    height: 56px;
+    padding: 0 10px;
+    z-index: 1;
+    position: relative;
+    transition: all .3s ease;
+    width: 50%;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 100;
+    letter-spacing: .2px;
+  }
+  .form-input.w-100 {
+    width: 100%;
+  }
+  .form-input.w-10 {
+    width: 10%;
+  }
+  .form-input:focus {
+    border-color: #1a73e8;
+  }
+  .form-input:focus + label {
+    top: 0;
+    font-size: 12px;
+  }
+  
+  .form-rows {
+    position: relative;
+    padding-right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+  .form-rows, .description {
+    margin-top: 24px;
+  }
+  
+  .description {
+    letter-spacing: .2px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  a {
+    color: #1a73e8;
+    letter-spacing: .2px;
+    font-size: 14px;
+    font-weight: 400;
+    hyphens: auto;
+    word-break: break-word;
+    text-decoration-color: #1a73e8;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+  }
+  a:hover {
+    text-decoration-line: underline;
+  }
+  
+  .section-title {
+    letter-spacing: .8px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    margin-bottom: 4px;
+  }
+  
+  .button-section {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .button-section .btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all .3s ease;
+  }
+  .button-section .btn + .btn {
+    margin-left: 10px;
+  }
+  .button-section .btn-clear {
+    background: white;
+    color: #1a73e8;
+  }
+  .button-section .btn-clear:hover {
+    background: #f2f2f2;
+    box-shadow: 0 0 1px 1px #f2f2f2;
+  }
+  .button-section .btn-primary {
+    background: #1a73e8;
+    color: white;
+  }
+  .button-section .btn-primary:hover {
+    background: #135cbc;
+    box-shadow: 0 0 1px 1px #135cbc;
+  }
+  .button-section.stack {
+    flex-wrap: wrap;
+  }
+  .button-section.stack .btn {
+    width: 100%;
+  }
+  .button-section.stack .btn + .btn {
+    margin: 10px 0 0 0;
+  }
+  .button-section.lefty {
+    justify-content: flex-start;
+  }
+  
